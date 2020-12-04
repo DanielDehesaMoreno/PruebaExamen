@@ -5,6 +5,8 @@
  */
 package pruebaexamened;
 
+import java.util.Scanner;
+
 /**
  *
  * @author DAM110
@@ -16,6 +18,12 @@ public class PruebaExamenED {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner teclado = new Scanner(System.in);
+        boolean salir=false;
+        do{
+            System.out.println("Introduce los grados que quieres pasar a kelvin: ");
+            double grados=teclado.nextDouble();
+        }while(salir=true);
     }
     
 }
