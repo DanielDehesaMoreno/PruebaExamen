@@ -23,7 +23,7 @@ public class PruebaExamenED {
         do {
             System.out.println("Introduce los grados que quieres pasar a kelvin: ");
             double grados = teclado.nextDouble();
-            double gradosk = grados * 273.15;
+            double gradosk = grados + 273.15;
             System.out.println(grados + " grados Celsius son " + gradosk + " grados Kelvin");
             System.out.println("¿Quieres continuar? \nIntroduce s,S,n o N");
             char c = teclado.next().charAt(0);
