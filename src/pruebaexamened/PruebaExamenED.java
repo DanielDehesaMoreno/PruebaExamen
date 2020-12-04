@@ -19,11 +19,22 @@ public class PruebaExamenED {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner teclado = new Scanner(System.in);
-        boolean salir=false;
-        do{
+        boolean salir = false;
+        do {
             System.out.println("Introduce los grados que quieres pasar a kelvin: ");
-            double grados=teclado.nextDouble();
-        }while(salir=true);
+            double grados = teclado.nextDouble();
+            double gradosk = grados * 273.15;
+            System.out.println(grados + " grados Celsius son " + gradosk + " grados Kelvin");
+            System.out.println("¿Quieres continuar? \nIntroduce s,S,n o N");
+            char c = teclado.next().charAt(0);
+            while (c != 's' && c != 'S' && c != 'n' && c != 'N') {
+                System.out.println("Introduce s,S,n o N");
+                c = teclado.next().charAt(0);
+            }
+            if (c == 'n' || c == 'N') {
+                salir = true;
+            }
+        } while (salir == false);
     }
-    
+
 }
